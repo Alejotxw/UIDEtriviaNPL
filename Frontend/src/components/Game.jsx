@@ -169,7 +169,10 @@ useEffect(() => {
 
       {/* FOOTER: Nombre del Jugador */}
       <div className="player-footer">
-        JUGANDO: <span>{playerName}</span>
+        <div className="player-name-card">
+          <span className="player-label">JUGANDO</span>
+          <span className="player-value">{playerName}</span>
+        </div>
       </div>
 
       {/* PANTALLA DE RESULTADO (MODAL) */}

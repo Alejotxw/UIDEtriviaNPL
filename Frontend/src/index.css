@@ -871,3 +871,129 @@ body {
   margin: 0 10px;
 }
 
+/* Estilo para el cuadro inferior del nombre del jugador */
+.player-footer {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.player-name-card {
+  background: #2a000b; /* Fondo más oscuro para resaltar */
+  border: 2px solid #ff9d00; /* Borde naranja característico */
+  padding: 8px 25px;
+  border-radius: 50px; /* Forma de píldora para diferenciar de los premios */
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.player-label {
+  color: #ffcf00; /* Amarillo para el título */
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.player-value {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Ajuste para móvil en el footer */
+@media (max-width: 768px) {
+  .player-name-card {
+    padding: 5px 15px;
+  }
+  .player-value {
+    font-size: 0.9rem;
+  }
+}
+
+/* Contenedor que bloquea el fondo */
+.result-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85); /* Fondo oscuro semitransparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px); /* Desenfoque del fondo para resaltar el cuadro */
+}
+
+/* Tarjeta de resultado */
+.result-card {
+  background: #4a0014;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.win-border { border: 5px solid #ffcf00; }
+.lose-border { border: 5px solid #ff4444; }
+
+.result-title {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 0px #000;
+}
+
+.win-border .result-title { color: #ffcf00; }
+.lose-border .result-title { color: #ff4444; }
+
+.result-icon {
+  font-size: 5rem;
+  margin: 20px 0;
+}
+
+.result-status {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+/* Reutilizamos y adaptamos tu caja de puntaje */
+.final-score-box {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 15px;
+  border-radius: 12px;
+  border: 2px dashed #ff9d00;
+  margin-bottom: 30px;
+}
+
+.final-score-box span {
+  font-size: 0.9rem;
+  color: #ff9d00;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.final-score-box h3 {
+  font-size: 2.5rem;
+  margin: 0;
+  color: #fff;
+}
+
+.result-player {
+  margin-bottom: 20px;
+  opacity: 0.8;
+  font-style: italic;
+}
+
+/* Animación de entrada */
+@keyframes popIn {
+  0% { transform: scale(0.7); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}

@@ -4,11 +4,11 @@ const DEEPSEEK_API_KEY = "sk-c76f7a44fd974f04ad7593aa6777f170"; // Pega aquí tu
 
 export const generateQuizData = async () => {
   // Definimos una lista de temas para que la IA elija aleatoriamente o mezcle
-  const temas = ["Matemáticas", "Ciencias", "Física", "Tecnología", "Historia", "Geografía", "Arte", "Entretenimiento"];
+  const temas = ["Arquitectura", "Derecho", "Administración de Empresas", "Psicologia", "Informatica", "Negocios Internacionales", "Marketing"];
   
-  const prompt = `Genera un JSON con 10 preguntas de trivia con las siguientes reglas:
-  1. TEMAS VARIADOS: Incluye obligatoriamente preguntas de: ${temas.join(", ")}. No repitas el mismo tema más de dos veces.
-  2. DIFICULTAD: Deben ir de muy fácil a muy difícil según el premio.
+  const prompt = `Genera un JSON con 10 preguntas de trivia académica sobre las carreras de la universidad UIDE Sede Loja:
+  1. TEMAS: Las preguntas deben ser conceptos básicos de: ${temas.join(", ")}. No repitas el mismo tema más de dos veces.
+  2. DIFICULTAD: Deben ir de nivel introductorio (1er semestre)
   3. PREMIOS: [100, 500, 1000, 5000, 10000, 20000, 50000, 100000, 500000, 1000000].
   4. FORMATO: Devuelve SOLO el objeto JSON con esta estructura:
   {
@@ -18,7 +18,7 @@ export const generateQuizData = async () => {
         "options": ["A", "B", "C", "D"],
         "correct": 0,
         "prize": 100,
-        "category": "Ciencia"
+        "category": "Nombre de la carrera"
       }
     ]
   }`;
