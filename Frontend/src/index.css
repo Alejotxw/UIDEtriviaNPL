@@ -997,3 +997,378 @@ body {
   0% { transform: scale(0.7); opacity: 0; }
   100% { transform: scale(1); opacity: 1; }
 }
+
+/* Cuadro de carga centrado */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loading-card {
+  background: #2a000d;
+  padding: 30px;
+  border-radius: 15px;
+  border: 2px solid #ffcf00;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(255, 207, 0, 0.4);
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(255, 255, 255, 0.1);
+  border-top: 5px solid #ffcf00;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-text {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.progress-bar-container {
+  width: 100%;
+  background: #444;
+  height: 10px;
+  border-radius: 5px;
+  margin-top: 15px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  background: #ffcf00;
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+/* Contenedor principal del juego */
+.main-game-layout {
+  display: grid;
+  grid-template-columns: 850px 300px; /* Tamaños fijos para que no se muevan */
+  gap: 20px;
+  align-items: start;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Cuadro de la Pregunta */
+.question-card {
+  background: rgba(0, 0, 0, 0.6);
+  border: 3px solid #ffcf00;
+  border-radius: 15px;
+  padding: 30px;
+  min-height: 500px; /* Altura fija para que no cambie entre preguntas */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.question-text {
+  font-size: 1.8rem;
+  min-height: 100px; /* Espacio fijo para el texto de la pregunta */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Cuadro de Premios (Fijo a la derecha) */
+.prize-card {
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid #ffcf00;
+  border-radius: 10px;
+  padding: 15px;
+  height: 500px; /* Misma altura que la question-card */
+  display: flex;
+  flex-direction: column;
+}
+
+.prize-list {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* Botones de opciones con tamaño fijo */
+.option-btn {
+  height: 70px; /* Altura fija para los botones */
+  font-size: 1.1rem;
+  text-align: left;
+  padding: 0 20px;
+}
+
+/* Encabezado con cuadros separados */
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1170px; /* 850px + 300px + gap */
+  margin-bottom: 20px;
+}
+
+.info-card {
+  background: rgba(0, 0, 0, 0.7);
+  border: 2px solid #ffcf00;
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 200px; /* Ancho fijo para que no cambie con nombres largos */
+}
+
+.info-label {
+  font-size: 0.7rem;
+  color: #ffcf00;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.info-value {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* Cuadro del Cronómetro */
+.timer-card {
+  min-width: 120px;
+  border-color: #ffffff;
+}
+
+/* Botón Teléfono (Comodín) */
+.phone-card {
+  background: #000000;
+  border: 2px solid #fff;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  box-shadow: 0 0 15px rgba(40, 167, 69, 0.5);
+}
+
+.phone-card:hover:not(.used) {
+  transform: scale(1.1);
+  background: #34ce57;
+}
+
+.phone-card.used {
+  background: #555;
+  filter: grayscale(1);
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+:root {
+  --gold: #ffcf00;
+  --blue-dark: #90063a;
+  --blue-bright: #00d4ff;
+  --correct: #28a745;
+  --wrong: #dc3545;
+  --glass: rgba(255, 255, 255, 0.1);
+}
+
+.app-container {
+  background: radial-gradient(circle, #0000009e 0%, #0000009e 100%);
+  min-height: 100vh;
+  color: white;
+  padding: 20px;
+}
+
+/* Contenedores de Información Superiores */
+.game-header {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.info-card {
+  background: linear-gradient(145deg, #0000009e, #0000009e);
+  border: 2px solid var(--blue-bright);
+  box-shadow: 0 0 15px var(--blue-bright);
+  padding: 10px 30px;
+  border-radius: 50px; /* Estilo cápsula */
+  text-align: center;
+}
+
+.info-label {
+  color: var(--blue-bright);
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+/* Cuadro de Pregunta Estilo Diamante */
+.question-card {
+  background: var(--glass);
+  border: 2px solid var(--gold);
+  border-radius: 20px;
+  position: relative;
+  padding: 50px;
+  margin-bottom: 30px;
+  box-shadow: inset 0 0 30px rgba(255, 207, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+/* Los botones de opciones ahora son más elegantes */
+.options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.option-btn {
+  background: linear-gradient(90deg, #0000009e 0%, #0000009e 100%);
+  border: 1px solid var(--blue-bright);
+  border-radius: 5px;
+  color: white;
+  font-size: 1.2rem;
+  padding: 15px 25px;
+  transition: all 0.2s;
+  position: relative;
+  overflow: hidden;
+  clip-path: polygon(5% 0%, 95% 0%, 100% 50%, 95% 100%, 5% 100%, 0% 50%); /* Forma de diamante estirado */
+}
+
+.option-btn:hover:not(:disabled) {
+  background: var(--gold);
+  color: black;
+  transform: scale(1.02);
+  border-color: white;
+}
+
+/* Escalera de Premios Lateral */
+.prize-card {
+  background: rgba(0, 0, 0, 0.8);
+  border-left: 4px solid var(--gold);
+  padding: 20px;
+  border-radius: 0 15px 15px 0;
+}
+
+.prize-row {
+  padding: 8px 15px;
+  margin: 4px 0;
+  border-radius: 4px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.active-prize {
+  background: var(--gold);
+  color: black;
+  font-weight: bold;
+  box-shadow: 0 0 20px var(--gold);
+}
+
+.passed-prize {
+  color: var(--gold);
+  opacity: 0.6;
+}
+
+:root {
+  --gold: #ffcf00;
+  --blue-dark: #90063a; /* Color original restaurado */
+  --blue-medium: #90063a;
+  --blue-bright: #ffb300;
+  --glass: rgba(0, 0, 0, 0.5);
+}
+
+.app-container {
+  /* Volvemos al degradado original más oscuro y elegante */
+  background: radial-gradient(circle, var(--blue-medium) 0%, var(--blue-dark) 100%);
+  min-height: 100vh;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Reducción del cuadro de preguntas */
+.question-card {
+  background: var(--glass);
+  border: 2px solid var(--gold);
+  border-radius: 15px;
+  padding: 25px 40px; /* Reducimos padding */
+  margin-bottom: 20px;
+  min-height: 250px; /* ANTES ERA 500px, ahora es la mitad */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.77);
+  backdrop-filter: blur(5px);
+}
+
+.question-text {
+  font-size: 1.6rem; /* Un poco más pequeño para que quepa todo */
+  line-height: 1.3;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+}
+
+/* Ajuste del layout para que todo suba un poco */
+.main-game-layout {
+  display: grid;
+  grid-template-columns: 800px 320px; /* Ajuste ligero de anchos */
+  gap: 25px;
+  width: 100%;
+  max-width: 1150px;
+}
+
+.left-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Opciones un poco más compactas */
+.option-btn {
+  height: 60px; /* Altura fija reducida */
+  font-size: 1.1rem;
+  clip-path: polygon(3% 0%, 97% 0%, 100% 50%, 97% 100%, 3% 100%, 0% 50%);
+}
+
+/* Cuadro de Dinero Acumulado */
+.money-card {
+  border-color: var(--gold) !important;
+  box-shadow: 0 0 15px rgba(255, 207, 0, 0.4);
+  min-width: 180px;
+}
+
+.money-value {
+  color: var(--gold);
+  font-family: 'Orbitron', sans-serif; /* O una fuente digital si tienes */
+  text-shadow: 0 0 10px rgba(255, 207, 0, 0.5);
+}
+
+/* Animación para cuando el dinero sube */
+@keyframes countUp {
+  from { transform: scale(1.2); color: #fff; }
+  to { transform: scale(1); color: var(--gold); }
+}
+
+.money-update {
+  animation: countUp 0.5s ease-out;
+}

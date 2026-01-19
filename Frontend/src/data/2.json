@@ -1,0 +1,254 @@
+[
+  {
+    "question": "Pregunta de inicialización (Genera el banco desde ajustes)",
+    "options": [
+      "Opción A",
+      "Opción B",
+      "Opción C",
+      "Opción D"
+    ],
+    "correct": 0,
+    "prize": 100,
+    "category": "Sistema"
+  },
+  {
+    "question": "¿Qué protocolo de red se utiliza para asignar direcciones IP dinámicamente a dispositivos en una red?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "FTP",
+      "HTTP"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Redes"
+  },
+  {
+    "question": "¿Cuál de las siguientes es una base de datos NoSQL?",
+    "options": [
+      "MySQL",
+      "PostgreSQL",
+      "MongoDB",
+      "Oracle"
+    ],
+    "correct": 2,
+    "prize": 100,
+    "category": "Bases de Datos"
+  },
+  {
+    "question": "¿Qué lenguaje de programación es conocido por su uso en desarrollo web del lado del cliente?",
+    "options": [
+      "Python",
+      "Java",
+      "JavaScript",
+      "C++"
+    ],
+    "correct": 2,
+    "prize": 100,
+    "category": "Programación"
+  },
+  {
+    "question": "¿Qué herramienta se utiliza para gestionar versiones de código fuente?",
+    "options": [
+      "Docker",
+      "Git",
+      "Jenkins",
+      "Kubernetes"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "DevOps"
+  },
+  {
+    "question": "¿Qué tipo de ataque cibernético implica engañar a un usuario para que revele información confidencial?",
+    "options": [
+      "DDoS",
+      "Phishing",
+      "Malware",
+      "Ransomware"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Seguridad"
+  },
+  {
+    "question": "¿Qué estructura de datos funciona con el principio FIFO (First In, First Out)?",
+    "options": [
+      "Pila",
+      "Cola",
+      "Árbol",
+      "Grafo"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Algoritmos"
+  },
+  {
+    "question": "¿Qué sistema operativo es de código abierto y basado en el kernel Linux?",
+    "options": [
+      "Windows",
+      "macOS",
+      "Ubuntu",
+      "iOS"
+    ],
+    "correct": 2,
+    "prize": 100,
+    "category": "Sistemas Operativos"
+  },
+  {
+    "question": "¿Qué protocolo seguro se utiliza para acceder y administrar servidores de forma remota?",
+    "options": [
+      "HTTP",
+      "FTP",
+      "SSH",
+      "SMTP"
+    ],
+    "correct": 2,
+    "prize": 100,
+    "category": "Redes"
+  },
+  {
+    "question": "¿Qué lenguaje de consulta se utiliza para interactuar con bases de datos relacionales?",
+    "options": [
+      "HTML",
+      "CSS",
+      "SQL",
+      "XML"
+    ],
+    "correct": 2,
+    "prize": 100,
+    "category": "Bases de Datos"
+  },
+  {
+    "question": "¿Qué framework de JavaScript es popular para construir interfaces de usuario?",
+    "options": [
+      "Django",
+      "Spring",
+      "React",
+      "Laravel"
+    ],
+    "correct": 2,
+    "prize": 100,
+    "category": "Programación"
+  },
+  {
+    "question": "¿Qué tecnología permite ejecutar aplicaciones en contenedores aislados?",
+    "options": [
+      "VirtualBox",
+      "VMware",
+      "Docker",
+      "Hyper-V"
+    ],
+    "correct": 2,
+    "prize": 100,
+    "category": "DevOps"
+  },
+  {
+    "question": "¿Qué tipo de cifrado utiliza un par de claves pública y privada?",
+    "options": [
+      "Simétrico",
+      "Asimétrico",
+      "Hash",
+      "SSL"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Seguridad"
+  },
+  {
+    "question": "¿Qué algoritmo de ordenación tiene una complejidad promedio de O(n log n)?",
+    "options": [
+      "Burbuja",
+      "Inserción",
+      "Quicksort",
+      "Selección"
+    ],
+    "correct": 2,
+    "prize": 100,
+    "category": "Algoritmos"
+  },
+  {
+    "question": "¿Qué comando en Linux se utiliza para listar archivos y directorios?",
+    "options": [
+      "cd",
+      "ls",
+      "mkdir",
+      "rm"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Sistemas Operativos"
+  },
+  {
+    "question": "¿Qué dispositivo de red conecta múltiples redes y dirige el tráfico entre ellas?",
+    "options": [
+      "Switch",
+      "Hub",
+      "Router",
+      "Modem"
+    ],
+    "correct": 2,
+    "prize": 100,
+    "category": "Redes"
+  },
+  {
+    "question": "¿Qué tipo de base de datos almacena datos en tablas con filas y columnas?",
+    "options": [
+      "Documental",
+      "Relacional",
+      "Gráfica",
+      "Clave-Valor"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Bases de Datos"
+  },
+  {
+    "question": "¿Qué lenguaje de programación es interpretado y se usa comúnmente en ciencia de datos?",
+    "options": [
+      "C#",
+      "Ruby",
+      "Python",
+      "Go"
+    ],
+    "correct": 2,
+    "prize": 100,
+    "category": "Programación"
+  },
+  {
+    "question": "¿Qué herramienta de automatización se utiliza para orquestar contenedores?",
+    "options": [
+      "Ansible",
+      "Chef",
+      "Kubernetes",
+      "Puppet"
+    ],
+    "correct": 2,
+    "prize": 100,
+    "category": "DevOps"
+  },
+  {
+    "question": "¿Qué técnica de seguridad verifica la identidad de un usuario?",
+    "options": [
+      "Autorización",
+      "Autenticación",
+      "Cifrado",
+      "Firewall"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Seguridad"
+  },
+  {
+    "question": "¿Qué estructura de datos es una colección de elementos no ordenados y sin duplicados?",
+    "options": [
+      "Lista",
+      "Conjunto",
+      "Diccionario",
+      "Tupla"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Algoritmos"
+  }
+]

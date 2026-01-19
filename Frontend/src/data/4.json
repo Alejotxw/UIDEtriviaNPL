@@ -1,0 +1,254 @@
+[
+  {
+    "question": "Pregunta de inicialización (Genera el banco desde ajustes)",
+    "options": [
+      "Opción A",
+      "Opción B",
+      "Opción C",
+      "Opción D"
+    ],
+    "correct": 0,
+    "prize": 100,
+    "category": "Sistema"
+  },
+  {
+    "question": "¿Qué protocolo de red utiliza el puerto 443 por defecto para comunicaciones seguras?",
+    "options": [
+      "HTTP",
+      "FTP",
+      "HTTPS",
+      "SSH"
+    ],
+    "correct": 2,
+    "prize": 100,
+    "category": "Redes"
+  },
+  {
+    "question": "¿Cuál de los siguientes lenguajes de programación es principalmente utilizado para desarrollo web del lado del cliente?",
+    "options": [
+      "Python",
+      "Java",
+      "JavaScript",
+      "C++"
+    ],
+    "correct": 2,
+    "prize": 100,
+    "category": "Programación"
+  },
+  {
+    "question": "¿Qué tipo de ataque cibernético implica el envío masivo de correos electrónicos no deseados?",
+    "options": [
+      "Phishing",
+      "Spam",
+      "DDoS",
+      "Malware"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Seguridad"
+  },
+  {
+    "question": "¿Qué base de datos NoSQL es conocida por su uso de documentos en formato JSON?",
+    "options": [
+      "MySQL",
+      "MongoDB",
+      "Oracle",
+      "SQL Server"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Bases de Datos"
+  },
+  {
+    "question": "¿Qué herramienta de control de versiones fue creada por Linus Torvalds?",
+    "options": [
+      "Git",
+      "SVN",
+      "Mercurial",
+      "CVS"
+    ],
+    "correct": 0,
+    "prize": 100,
+    "category": "Desarrollo"
+  },
+  {
+    "question": "¿Qué protocolo se utiliza para asignar direcciones IP de forma automática en una red?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "FTP",
+      "SMTP"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Redes"
+  },
+  {
+    "question": "¿Qué lenguaje de programación es conocido por su uso en ciencia de datos y aprendizaje automático?",
+    "options": [
+      "Ruby",
+      "Python",
+      "PHP",
+      "Swift"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Programación"
+  },
+  {
+    "question": "¿Qué tipo de software malicioso se propaga replicándose a sí mismo sin necesidad de intervención del usuario?",
+    "options": [
+      "Troyano",
+      "Gusano",
+      "Spyware",
+      "Adware"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Seguridad"
+  },
+  {
+    "question": "¿Qué sistema operativo de código abierto está basado en el kernel Linux?",
+    "options": [
+      "Windows",
+      "macOS",
+      "Ubuntu",
+      "iOS"
+    ],
+    "correct": 2,
+    "prize": 100,
+    "category": "Sistemas Operativos"
+  },
+  {
+    "question": "¿Qué tecnología permite ejecutar múltiples sistemas operativos en una sola máquina física?",
+    "options": [
+      "Contenedores",
+      "Virtualización",
+      "Cloud Computing",
+      "Clustering"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Infraestructura"
+  },
+  {
+    "question": "¿Qué lenguaje de marcado se utiliza para estructurar contenido en la web?",
+    "options": [
+      "CSS",
+      "JavaScript",
+      "HTML",
+      "XML"
+    ],
+    "correct": 2,
+    "prize": 100,
+    "category": "Desarrollo Web"
+  },
+  {
+    "question": "¿Qué protocolo se utiliza para enviar correos electrónicos desde un cliente a un servidor?",
+    "options": [
+      "POP3",
+      "IMAP",
+      "SMTP",
+      "HTTP"
+    ],
+    "correct": 2,
+    "prize": 100,
+    "category": "Redes"
+  },
+  {
+    "question": "¿Qué base de datos relacional es de código abierto y muy popular en aplicaciones web?",
+    "options": [
+      "PostgreSQL",
+      "SQLite",
+      "MySQL",
+      "MariaDB"
+    ],
+    "correct": 2,
+    "prize": 100,
+    "category": "Bases de Datos"
+  },
+  {
+    "question": "¿Qué herramienta se utiliza para automatizar el despliegue y gestión de aplicaciones en contenedores?",
+    "options": [
+      "Kubernetes",
+      "Docker",
+      "Jenkins",
+      "Ansible"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "DevOps"
+  },
+  {
+    "question": "¿Qué tipo de ataque busca engañar a los usuarios para que revelen información confidencial?",
+    "options": [
+      "Spam",
+      "Phishing",
+      "DDoS",
+      "Ransomware"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Seguridad"
+  },
+  {
+    "question": "¿Qué lenguaje de programación fue desarrollado por Microsoft y es parte del framework .NET?",
+    "options": [
+      "Java",
+      "C#",
+      "Python",
+      "Ruby"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Programación"
+  },
+  {
+    "question": "¿Qué protocolo de red se utiliza para resolver nombres de dominio a direcciones IP?",
+    "options": [
+      "DHCP",
+      "DNS",
+      "FTP",
+      "HTTP"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Redes"
+  },
+  {
+    "question": "¿Qué tecnología de almacenamiento en la nube es ofrecida por Amazon?",
+    "options": [
+      "Google Drive",
+      "Dropbox",
+      "OneDrive",
+      "Amazon S3"
+    ],
+    "correct": 3,
+    "prize": 100,
+    "category": "Cloud Computing"
+  },
+  {
+    "question": "¿Qué lenguaje de hojas de estilo se utiliza para diseñar la apariencia de páginas web?",
+    "options": [
+      "HTML",
+      "JavaScript",
+      "CSS",
+      "XML"
+    ],
+    "correct": 2,
+    "prize": 100,
+    "category": "Desarrollo Web"
+  },
+  {
+    "question": "¿Qué herramienta de automatización de infraestructura utiliza archivos de configuración en YAML?",
+    "options": [
+      "Chef",
+      "Puppet",
+      "Ansible",
+      "Terraform"
+    ],
+    "correct": 2,
+    "prize": 100,
+    "category": "DevOps"
+  }
+]

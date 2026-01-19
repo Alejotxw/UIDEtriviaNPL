@@ -1,0 +1,9 @@
+[
+  {
+    "question": "Pregunta de inicialización (Genera el banco desde ajustes)",
+    "options": ["Opción A", "Opción B", "Opción C", "Opción D"],
+    "correct": 0,
+    "prize": 100,
+    "category": "Sistema"
+  }
+]

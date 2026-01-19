@@ -1,0 +1,254 @@
+[
+  {
+    "question": "Pregunta de inicialización (Genera el banco desde ajustes)",
+    "options": [
+      "Opción A",
+      "Opción B",
+      "Opción C",
+      "Opción D"
+    ],
+    "correct": 0,
+    "prize": 100,
+    "category": "Sistema"
+  },
+  {
+    "question": "¿Qué protocolo de red se utiliza comúnmente para la transferencia segura de archivos sobre una red?",
+    "options": [
+      "FTP",
+      "HTTP",
+      "SFTP",
+      "SMTP"
+    ],
+    "correct": 2,
+    "prize": 100,
+    "category": "Redes"
+  },
+  {
+    "question": "¿Qué lenguaje de programación es conocido por su uso en desarrollo web del lado del cliente?",
+    "options": [
+      "Python",
+      "Java",
+      "JavaScript",
+      "C++"
+    ],
+    "correct": 2,
+    "prize": 100,
+    "category": "Programación"
+  },
+  {
+    "question": "¿Qué tipo de ataque cibernético implica engañar a los usuarios para que revelen información confidencial?",
+    "options": [
+      "DDoS",
+      "Phishing",
+      "Malware",
+      "Ransomware"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Seguridad"
+  },
+  {
+    "question": "¿Qué base de datos NoSQL es conocida por su estructura de documentos JSON?",
+    "options": [
+      "MySQL",
+      "MongoDB",
+      "Oracle",
+      "PostgreSQL"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Bases de Datos"
+  },
+  {
+    "question": "¿Qué herramienta de control de versiones es ampliamente utilizada en desarrollo de software?",
+    "options": [
+      "Git",
+      "SVN",
+      "Mercurial",
+      "CVS"
+    ],
+    "correct": 0,
+    "prize": 100,
+    "category": "Herramientas"
+  },
+  {
+    "question": "¿Qué sistema operativo de código abierto es popular en servidores?",
+    "options": [
+      "Windows Server",
+      "Linux",
+      "macOS",
+      "iOS"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Sistemas Operativos"
+  },
+  {
+    "question": "¿Qué tecnología permite la virtualización de hardware para ejecutar múltiples sistemas operativos?",
+    "options": [
+      "Docker",
+      "Kubernetes",
+      "Hypervisor",
+      "VMware"
+    ],
+    "correct": 2,
+    "prize": 100,
+    "category": "Virtualización"
+  },
+  {
+    "question": "¿Qué lenguaje de consulta se utiliza para manipular bases de datos relacionales?",
+    "options": [
+      "NoSQL",
+      "SQL",
+      "GraphQL",
+      "MongoDB Query"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Bases de Datos"
+  },
+  {
+    "question": "¿Qué framework de JavaScript es conocido por su arquitectura de componentes?",
+    "options": [
+      "Angular",
+      "React",
+      "Vue.js",
+      "jQuery"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Desarrollo Web"
+  },
+  {
+    "question": "¿Qué tipo de memoria es volátil y se utiliza para almacenar datos temporales?",
+    "options": [
+      "HDD",
+      "SSD",
+      "RAM",
+      "ROM"
+    ],
+    "correct": 2,
+    "prize": 100,
+    "category": "Hardware"
+  },
+  {
+    "question": "¿Qué protocolo se utiliza para enviar correos electrónicos desde un cliente a un servidor?",
+    "options": [
+      "POP3",
+      "IMAP",
+      "SMTP",
+      "HTTP"
+    ],
+    "correct": 2,
+    "prize": 100,
+    "category": "Redes"
+  },
+  {
+    "question": "¿Qué lenguaje de programación es comúnmente usado en ciencia de datos y machine learning?",
+    "options": [
+      "C#",
+      "Ruby",
+      "Python",
+      "PHP"
+    ],
+    "correct": 2,
+    "prize": 100,
+    "category": "Programación"
+  },
+  {
+    "question": "¿Qué tecnología de almacenamiento en la nube es ofrecida por Amazon?",
+    "options": [
+      "Google Drive",
+      "Dropbox",
+      "Azure Blob Storage",
+      "Amazon S3"
+    ],
+    "correct": 3,
+    "prize": 100,
+    "category": "Cloud Computing"
+  },
+  {
+    "question": "¿Qué tipo de prueba de software verifica que el código funcione correctamente en conjunto?",
+    "options": [
+      "Prueba unitaria",
+      "Prueba de integración",
+      "Prueba de sistema",
+      "Prueba de aceptación"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Testing"
+  },
+  {
+    "question": "¿Qué herramienta se utiliza para automatizar tareas de construcción en proyectos de software?",
+    "options": [
+      "Jenkins",
+      "Maven",
+      "Gradle",
+      "Ant"
+    ],
+    "correct": 0,
+    "prize": 100,
+    "category": "DevOps"
+  },
+  {
+    "question": "¿Qué protocolo de red proporciona direcciones IP dinámicas a dispositivos en una red?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "TCP",
+      "UDP"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Redes"
+  },
+  {
+    "question": "¿Qué lenguaje de marcado se utiliza para definir la estructura de una página web?",
+    "options": [
+      "CSS",
+      "JavaScript",
+      "HTML",
+      "XML"
+    ],
+    "correct": 2,
+    "prize": 100,
+    "category": "Desarrollo Web"
+  },
+  {
+    "question": "¿Qué tipo de base de datos es adecuada para datos altamente interconectados?",
+    "options": [
+      "Base de datos relacional",
+      "Base de datos documental",
+      "Base de datos gráfica",
+      "Base de datos clave-valor"
+    ],
+    "correct": 2,
+    "prize": 100,
+    "category": "Bases de Datos"
+  },
+  {
+    "question": "¿Qué tecnología permite la comunicación entre servicios en una arquitectura de microservicios?",
+    "options": [
+      "REST API",
+      "SOAP",
+      "gRPC",
+      "GraphQL"
+    ],
+    "correct": 0,
+    "prize": 100,
+    "category": "Arquitectura"
+  },
+  {
+    "question": "¿Qué herramienta se utiliza para monitorear y gestionar contenedores Docker?",
+    "options": [
+      "Kubernetes",
+      "Docker Swarm",
+      "Apache Mesos",
+      "Nomad"
+    ],
+    "correct": 0,
+    "prize": 100,
+    "category": "Contenedores"
+  }
+]

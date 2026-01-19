@@ -1,6 +1,13 @@
 import React from 'react';
 
-const Settings = ({ setView, wildcardActive, setWildcardActive, difficultyTime, setDifficultyTime }) => {
+const Settings = ({ 
+  setView, 
+  wildcardActive, 
+  setWildcardActive, 
+  difficultyTime, 
+  setDifficultyTime,
+  onGenerateBank 
+}) => {
   return (
     <div className="settings-overlay">
       <div className="settings-card">
@@ -13,7 +20,6 @@ const Settings = ({ setView, wildcardActive, setWildcardActive, difficultyTime, 
               <input 
                 type="checkbox" 
                 checked={wildcardActive} 
-                // Actualiza el estado en App.jsx
                 onChange={(e) => setWildcardActive(e.target.checked)} 
               />
               Activar Comodín de Llamada
@@ -26,7 +32,6 @@ const Settings = ({ setView, wildcardActive, setWildcardActive, difficultyTime, 
           <select 
             className="settings-select"
             value={difficultyTime}
-            // Actualiza el estado en App.jsx (convertimos a número)
             onChange={(e) => setDifficultyTime(Number(e.target.value))}
           >
             <option value={45}>Fácil (45 seg)</option>
@@ -35,8 +40,28 @@ const Settings = ({ setView, wildcardActive, setWildcardActive, difficultyTime, 
           </select>
         </div>
 
-        <button onClick={() => setView('menu')} className="btn-save-settings">
-          GUARDAR Y VOLVER
+        <hr style={{opacity: 0.2, margin: '20px 0'}} />
+
+        <div className="settings-section">
+          <h3>BANCO DE DATOS (IA)</h3>
+          <p style={{fontSize: '0.75rem', marginBottom: '10px', color: '#ccc'}}>
+            Genera 20 preguntas con DeepSeek y descárgalas.
+          </p>
+          <button 
+            onClick={onGenerateBank} 
+            className="btn-save-settings"
+            style={{backgroundColor: '#28a745', fontSize: '0.8rem'}}
+          >
+            📥 GENERAR Y DESCARGAR JSON
+          </button>
+        </div>
+
+        <button 
+          onClick={() => setView('menu')} 
+          className="btn-save-settings" 
+          style={{marginTop: '20px'}}
+        >
+          VOLVER AL MENÚ
         </button>
       </div>
     </div>

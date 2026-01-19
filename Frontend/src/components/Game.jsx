@@ -1,188 +1,136 @@
 import React, { useState, useEffect } from 'react';
-import { generateQuizData } from '../services/aiService';
-import GameResult from './GameResult'; // Asegúrate de haber creado este archivo
+import GameResult from './GameResult';
 
-const Game = ({ playerName, setView, saveScore, wildcardActive, difficultyTime }) => {
-  const [questions, setQuestions] = useState([]);
-  const [loading, setLoading] = useState(true);
+const Game = ({ playerName, questions, setView, saveScore, wildcardActive, difficultyTime }) => {
   const [currentIdx, setCurrentIdx] = useState(0);
-  const [timeLeft, setTimeLeft] = useState(difficultyTime || 30);
+  const [timeLeft, setTimeLeft] = useState(difficultyTime);
   const [selected, setSelected] = useState(null);
+  const [credits, setCredits] = useState(0); // Este es el dinero acumulado
   const [hasUsedPhone, setHasUsedPhone] = useState(false);
-  const [credits, setCredits] = useState(0);
-  
-  // Estados para la pantalla final
   const [showResult, setShowResult] = useState(false);
   const [isWin, setIsWin] = useState(false);
+  const [animateMoney, setAnimateMoney] = useState(false);
 
-  // 1. Carga inicial de preguntas desde la IA (DeepSeek)
-// ... dentro de Game.jsx ...
-
-useEffect(() => {
-  const initGame = async () => {
-    setLoading(true); // Aseguramos que muestre carga al reiniciar
-    try {
-      const rawData = await generateQuizData();
-      const data = JSON.parse(rawData); // Parseamos el contenido de la IA
-      
-      if (data && data.questions) {
-        // Opcional: Barajar las opciones internamente si quieres más aleatoriedad
-        setQuestions(data.questions);
-        setLoading(false);
-      }
-    } catch (error) {
-      console.error("Fallo al cargar preguntas:", error);
-      setView('menu');
-    }
-  };
-  initGame();
-}, []); // Solo se ejecuta al montar el componente del juego
-
-  // 2. Lógica del Cronómetro
   useEffect(() => {
-    if (!loading && !showResult && timeLeft > 0 && selected === null) {
-      const timer = setTimeout(() => setTimeLeft(timeLeft - 1), 1000);
-      return () => clearTimeout(timer);
-    } else if (timeLeft === 0 && !showResult) {
-      handleEnd(false);
-    }
-  }, [timeLeft, loading, selected, showResult]);
+    if (showResult) return;
+    if (timeLeft <= 0) { handleAnswer(null); return; }
+    const timer = setInterval(() => setTimeLeft(prev => prev - 1), 1000);
+    return () => clearInterval(timer);
+  }, [timeLeft, showResult]);
 
-  // 3. Manejo de respuestas
-  const handleAnswer = (index) => {
-    setSelected(index);
-    const isCorrect = index === questions[currentIdx].correct;
+  const currentQ = questions[currentIdx];
 
-    setTimeout(() => {
-      if (isCorrect) {
-        const prizeEarned = questions[currentIdx].prize;
-        setCredits(prizeEarned);
-
-        if (currentIdx + 1 < questions.length) {
-          // Siguiente pregunta
-          setCurrentIdx(currentIdx + 1);
-          setTimeLeft(difficultyTime || 30);
-          setSelected(null);
-        } else {
-          // Ganó el juego completo
-          handleEnd(true, prizeEarned);
-        }
-      } else {
-        // Respuesta incorrecta
-        handleEnd(false);
-      }
-    }, 1500);
-  };
-
-  // 4. Finalización del juego
-  const handleEnd = (win = false, finalScore = credits) => {
-    setIsWin(win);
-    setShowResult(true);
-    saveScore(playerName, finalScore);
-  };
-
-  // 5. Comodín de llamada
-  const usePhone = () => {
-    if (!hasUsedPhone && !showResult) {
-      setTimeLeft(prev => prev + 30);
+  const handlePhoneClick = () => {
+    if (!hasUsedPhone && wildcardActive) {
+      setTimeLeft(prev => prev + 15);
       setHasUsedPhone(true);
     }
   };
 
-  // Pantalla de carga mientras la IA responde
-  if (loading) return (
-    <div className="settings-overlay">
-      <div className="settings-card">
-        <div className="loader"></div>
-        <h2 className="settings-title">🤖 IA GENERANDO DESAFÍO</h2>
-        <p>DeepSeek está preparando tus preguntas...</p>
-      </div>
-    </div>
-  );
+  const handleAnswer = (index) => {
+    if (selected !== null) return;
+    setSelected(index);
 
-  const currentQ = questions[currentIdx];
+    setTimeout(() => {
+      if (index === currentQ.correct) {
+        // SUMAR DINERO: Acumulamos el premio de la pregunta actual
+        const premioGanado = currentQ.prize;
+        setCredits(prev => prev + premioGanado);
+        setAnimateMoney(true); // Dispara animación
+        
+        setTimeout(() => setAnimateMoney(false), 500);
+
+        if (currentIdx + 1 < questions.length) {
+          setCurrentIdx(prev => prev + 1);
+          setTimeLeft(difficultyTime);
+          setSelected(null);
+        } else {
+          setIsWin(true);
+          setShowResult(true);
+          saveScore(playerName, credits + premioGanado);
+        }
+      } else {
+        // Si falla, termina con lo que acumuló hasta el momento
+        setShowResult(true);
+        saveScore(playerName, credits);
+      }
+    }, 1200);
+  };
 
   return (
-    <div className="game-screen-layout">
-      {/* HEADER: Créditos, Cronómetro y Comodín */}
-      <div className="game-top-bar">
-        <div className="player-tag">💰 ${credits.toLocaleString()}</div>
-        
-        <div className="timer-box">
-          <span className="timer-label">PREGUNTA {currentIdx + 1}/10</span>
-          <span className="timer-value" style={{ color: timeLeft <= 5 ? '#ff4444' : '#fff' }}>
-            {timeLeft}s
-          </span>
+    <div className="game-wrapper" style={{width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+      
+      {/* HUD SUPERIOR ACTUALIZADO */}
+      <div className="game-header">
+        <div className="info-card">
+          <div className="info-label">JUGADOR</div>
+          <div className="info-value">{playerName}</div>
         </div>
 
-        <div className="wildcard-section">
-          {wildcardActive && (
-            <button 
-              onClick={usePhone} 
-              disabled={hasUsedPhone} 
-              className={`btn-circle ${hasUsedPhone ? 'used' : ''}`}
-            >
-              📞
-            </button>
-          )}
+        {/* NUEVO CUADRO DE DINERO ACUMULADO */}
+        <div className={`info-card money-card ${animateMoney ? 'money-update' : ''}`}>
+          <div className="info-label">ACUMULADO</div>
+          <div className="info-value money-value">${credits.toLocaleString()}</div>
         </div>
+
+        <div className="info-card" style={{borderColor: timeLeft < 10 ? '#ff4444' : 'var(--blue-bright)'}}>
+          <div className="info-label">TIEMPO</div>
+          <div className="info-value">{timeLeft}s</div>
+        </div>
+
+        {wildcardActive && (
+          <button 
+            className={`phone-card ${hasUsedPhone ? 'used' : ''}`}
+            onClick={handlePhoneClick}
+          >
+            📞
+          </button>
+        )}
       </div>
 
-      <div className="game-main-content">
-        {/* CUADRO DE PREGUNTA */}
-        <div className="question-card">
-          <h3 className="question-text">{currentQ.question}</h3>
+      <div className="main-game-layout">
+        <div className="left-panel">
+          <div className="question-card">
+            <div className="category-tag" style={{position: 'absolute', top: '-12px', background: 'var(--gold)', color: 'black', padding: '2px 15px', borderRadius: '5px', fontWeight: 'bold', fontSize: '0.8rem'}}>
+              {currentQ.category.toUpperCase()}
+            </div>
+            <h2 className="question-text">{currentQ.question}</h2>
+          </div>
+
           <div className="options-grid">
             {currentQ.options.map((opt, i) => (
-              <button 
-                key={i} 
-                className={`option-btn ${
-                  selected === i 
-                    ? (i === currentQ.correct ? 'correct' : 'wrong') 
-                    : ''
-                }`}
+              <button
+                key={i}
+                className={`option-btn ${selected === i ? (i === currentQ.correct ? 'correct' : 'wrong') : ''}`}
                 onClick={() => handleAnswer(i)}
                 disabled={selected !== null}
               >
-                <span className="option-letter">{String.fromCharCode(65 + i)}:</span> {opt}
+                <b style={{color: 'var(--gold)', marginRight: '10px'}}>{String.fromCharCode(65 + i)}:</b> 
+                {opt}
               </button>
             ))}
           </div>
         </div>
         
-        {/* CUADRO DE PREMIOS (ESCALERA) */}
-        <div className="prize-card">
-          <h4 className="prize-title">PREMIOS</h4>
+        <div className="prize-card" style={{height: 'fit-content'}}>
+          <h4 style={{textAlign: 'center', color: 'var(--gold)', margin: '0 0 15px 0', fontSize: '1rem'}}>VALOR PREGUNTA</h4>
           <div className="prize-list">
             {questions.map((q, i) => (
               <div 
                 key={i} 
                 className={`prize-row ${i === currentIdx ? 'active-prize' : ''} ${i < currentIdx ? 'passed-prize' : ''}`}
+                style={{fontSize: '0.9rem', padding: '5px 15px'}}
               >
-                <span className="prize-number">{i + 1}</span>
-                <span className="prize-amount">${q.prize.toLocaleString()}</span>
+                <span>Q {i + 1}</span>
+                <span style={{float: 'right'}}>${q.prize.toLocaleString()}</span>
               </div>
             )).reverse()}
           </div>
         </div>
       </div>
 
-      {/* FOOTER: Nombre del Jugador */}
-      <div className="player-footer">
-        <div className="player-name-card">
-          <span className="player-label">JUGANDO</span>
-          <span className="player-value">{playerName}</span>
-        </div>
-      </div>
-
-      {/* PANTALLA DE RESULTADO (MODAL) */}
       {showResult && (
-        <GameResult 
-          win={isWin} 
-          score={credits} 
-          playerName={playerName} 
-          onRestart={() => setView('menu')} 
-        />
+        <GameResult win={isWin} score={credits} playerName={playerName} onRestart={() => setView('menu')} />
       )}
     </div>
   );
