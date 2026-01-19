@@ -1,254 +1,254 @@
 [
   {
-    "question": "Pregunta de inicialización (Genera el banco desde ajustes)",
+    "question": "¿Qué componente físico permite conectar la computadora a una toma de corriente?",
     "options": [
-      "Opción A",
-      "Opción B",
-      "Opción C",
-      "Opción D"
+      "Cable de alimentación",
+      "Cable HDMI",
+      "Cable USB",
+      "Cable de red"
     ],
     "correct": 0,
     "prize": 100,
-    "category": "Sistema"
+    "category": "Hardware"
   },
   {
-    "question": "¿Qué protocolo de red utiliza el puerto 443 por defecto para comunicaciones seguras?",
+    "question": "¿Cuál es la función principal de los altavoces o parlantes?",
     "options": [
-      "HTTP",
-      "FTP",
-      "HTTPS",
-      "SSH"
+      "Capturar la voz del usuario",
+      "Permitir la salida de sonido de la computadora",
+      "Almacenar archivos de música",
+      "Controlar el movimiento del puntero"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Hardware"
+  },
+  {
+    "question": "¿Qué significa que una computadora está 'en silencio' o 'mute'?",
+    "options": [
+      "Que el monitor está apagado",
+      "Que no tiene conexión a internet",
+      "Que se ha desactivado la salida de audio",
+      "Que el teclado no funciona"
     ],
     "correct": 2,
     "prize": 100,
-    "category": "Redes"
+    "category": "Uso de Sistema"
   },
   {
-    "question": "¿Cuál de las siguientes es una base de datos NoSQL?",
+    "question": "¿Qué es un 'Smartphone'?",
     "options": [
-      "MySQL",
-      "PostgreSQL",
-      "MongoDB",
-      "Oracle"
-    ],
-    "correct": 2,
-    "prize": 100,
-    "category": "Bases de Datos"
-  },
-  {
-    "question": "¿Qué lenguaje de programación es conocido por su uso en desarrollo web del lado del cliente?",
-    "options": [
-      "Python",
-      "Java",
-      "JavaScript",
-      "C++"
-    ],
-    "correct": 2,
-    "prize": 100,
-    "category": "Programación"
-  },
-  {
-    "question": "¿Qué significa la sigla 'API' en el contexto de desarrollo de software?",
-    "options": [
-      "Application Programming Interface",
-      "Advanced Programming Interface",
-      "Automated Programming Interface",
-      "Application Process Integration"
+      "Un teléfono inteligente con funciones de computadora",
+      "Una televisión que se conecta a internet",
+      "Un reloj de pared digital",
+      "Una computadora de escritorio pequeña"
     ],
     "correct": 0,
     "prize": 100,
-    "category": "Desarrollo"
+    "category": "Conceptos"
   },
   {
-    "question": "¿Qué tipo de ataque cibernético implica engañar a un usuario para que revele información confidencial?",
+    "question": "¿Para qué sirve el botón 'Minimizar' de una ventana?",
     "options": [
-      "DDoS",
-      "Phishing",
-      "Malware",
-      "Ransomware"
+      "Para cerrar el programa definitivamente",
+      "Para ocultar la ventana en la barra de tareas sin cerrarla",
+      "Para cambiar el color del fondo",
+      "Para imprimir el contenido de la pantalla"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Uso de Sistema"
+  },
+  {
+    "question": "¿Cuál de estas opciones describe mejor a un Laptop o Portátil?",
+    "options": [
+      "Una computadora que no se puede mover",
+      "Una computadora de gran tamaño para servidores",
+      "Una computadora compacta que se puede transportar fácilmente",
+      "Un dispositivo que solo sirve para jugar"
+    ],
+    "correct": 2,
+    "prize": 100,
+    "category": "Hardware"
+  },
+  {
+    "question": "¿Qué es la 'batería' en una computadora portátil?",
+    "options": [
+      "El programa que mide el tiempo",
+      "Una pieza que almacena energía para usarla sin cable",
+      "El ventilador que enfría el equipo",
+      "Un virus que gasta mucha luz"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Hardware"
+  },
+  {
+    "question": "¿Para qué se utiliza comúnmente una hoja de cálculo (ej. Excel)?",
+    "options": [
+      "Para editar videos profesionales",
+      "Para realizar cuentas, tablas y presupuestos",
+      "Para enviar correos electrónicos",
+      "Para dibujar retratos"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Software"
+  },
+  {
+    "question": "¿Qué es un 'nombre de usuario' (Username)?",
+    "options": [
+      "El nombre del fabricante del equipo",
+      "La clave secreta para entrar",
+      "El nombre que identifica a una persona en un sistema",
+      "El modelo de la computadora"
+    ],
+    "correct": 2,
+    "prize": 100,
+    "category": "Seguridad"
+  },
+  {
+    "question": "¿Qué sucede al hacer 'clic' en el icono de una carpeta?",
+    "options": [
+      "Se borra la carpeta",
+      "Se abre para mostrar los archivos que contiene",
+      "Se cambia el nombre automáticamente",
+      "Se apaga la computadora"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Uso de Sistema"
+  },
+  {
+    "question": "¿Cuál es la función del botón 'Maximizar'?",
+    "options": [
+      "Hacer que la ventana ocupe toda la pantalla",
+      "Hacer que las letras se vean más grandes",
+      "Aumentar el brillo del monitor",
+      "Duplicar el archivo seleccionado"
+    ],
+    "correct": 0,
+    "prize": 100,
+    "category": "Uso de Sistema"
+  },
+  {
+    "question": "¿Qué es una 'captura de pantalla' (Screenshot)?",
+    "options": [
+      "Una foto tomada con la cámara web",
+      "Una imagen de lo que se ve en el monitor en ese momento",
+      "Un dibujo hecho con el mouse",
+      "Un video grabado de internet"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Uso de Sistema"
+  },
+  {
+    "question": "¿Qué es un buscador de internet (ej. Google, Bing)?",
+    "options": [
+      "Un juego de laberintos",
+      "Una herramienta para encontrar información en la web",
+      "Un cable para conectar el modem",
+      "Un programa para limpiar el teclado"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Internet"
+  },
+  {
+    "question": "¿Para qué sirve el puerto HDMI?",
+    "options": [
+      "Para cargar la batería del mouse",
+      "Para conectar la PC a una televisión o monitor externo",
+      "Para insertar una tarjeta de memoria",
+      "Para escuchar radio FM"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Hardware"
+  },
+  {
+    "question": "¿Qué significa 'descargar' (download) un archivo?",
+    "options": [
+      "Borrarlo del disco duro",
+      "Bajar un archivo de internet a nuestra computadora",
+      "Cambiar el color de un documento",
+      "Imprimirlo en papel"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Internet"
+  },
+  {
+    "question": "¿Qué es el 'cursor'?",
+    "options": [
+      "El botón de encendido",
+      "La flechita que indica la posición del mouse",
+      "Un tipo de letra",
+      "El cable de red"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Uso de Sistema"
+  },
+  {
+    "question": "¿Qué función cumple el teclado?",
+    "options": [
+      "Permitir el ingreso de letras, números y mandos",
+      "Mostrar las imágenes de los juegos",
+      "Procesar los datos de la memoria",
+      "Enfriar el interior de la torre"
+    ],
+    "correct": 0,
+    "prize": 100,
+    "category": "Hardware"
+  },
+  {
+    "question": "¿Qué es un 'Virus' informático?",
+    "options": [
+      "Una pieza que se rompe por el calor",
+      "Un programa malicioso que daña el sistema",
+      "Un mensaje de un amigo",
+      "Un componente que mejora la velocidad"
     ],
     "correct": 1,
     "prize": 100,
     "category": "Seguridad"
   },
   {
-    "question": "¿Qué sistema operativo es de código abierto y basado en el kernel Linux?",
+    "question": "¿Qué se necesita para tener internet inalámbrico en casa?",
     "options": [
-      "Windows",
-      "macOS",
-      "Ubuntu",
-      "iOS"
-    ],
-    "correct": 2,
-    "prize": 100,
-    "category": "Sistemas Operativos"
-  },
-  {
-    "question": "¿Qué tecnología permite ejecutar múltiples sistemas operativos en una sola máquina física?",
-    "options": [
-      "Virtualización",
-      "Cloud Computing",
-      "Containerización",
-      "Redes"
-    ],
-    "correct": 0,
-    "prize": 100,
-    "category": "Infraestructura"
-  },
-  {
-    "question": "¿Qué lenguaje de consulta se utiliza comúnmente para interactuar con bases de datos relacionales?",
-    "options": [
-      "Python",
-      "SQL",
-      "HTML",
-      "JSON"
+      "Un cable muy largo hasta la calle",
+      "Un router con señal Wi-Fi",
+      "Muchos monitores encendidos",
+      "Una impresora láser"
     ],
     "correct": 1,
     "prize": 100,
-    "category": "Bases de Datos"
+    "category": "Internet"
   },
   {
-    "question": "¿Qué protocolo se utiliza para enviar correos electrónicos desde un cliente a un servidor?",
+    "question": "¿Para qué sirve el programa 'Calculadora' en la PC?",
     "options": [
-      "POP3",
-      "IMAP",
-      "SMTP",
-      "FTP"
-    ],
-    "correct": 2,
-    "prize": 100,
-    "category": "Redes"
-  },
-  {
-    "question": "¿Qué estructura de datos funciona bajo el principio 'último en entrar, primero en salir'?",
-    "options": [
-      "Cola",
-      "Pila",
-      "Lista",
-      "Árbol"
+      "Para escribir cuentos cortos",
+      "Para realizar operaciones matemáticas",
+      "Para ver fotos del celular",
+      "Para navegar por redes sociales"
     ],
     "correct": 1,
     "prize": 100,
-    "category": "Algoritmos"
+    "category": "Software"
   },
   {
-    "question": "¿Qué herramienta se utiliza para controlar versiones de código fuente en desarrollo colaborativo?",
+    "question": "¿Qué es un 'archivo' en informática?",
     "options": [
-      "Git",
-      "Docker",
-      "Jenkins",
-      "Kubernetes"
-    ],
-    "correct": 0,
-    "prize": 100,
-    "category": "DevOps"
-  },
-  {
-    "question": "¿Qué tipo de prueba de software verifica que los componentes individuales funcionen correctamente?",
-    "options": [
-      "Prueba de integración",
-      "Prueba unitaria",
-      "Prueba de sistema",
-      "Prueba de aceptación"
+      "Una caja física para documentos",
+      "Una unidad de información (foto, texto, música) guardada en la PC",
+      "Un tipo de cable de video",
+      "La marca del procesador"
     ],
     "correct": 1,
     "prize": 100,
-    "category": "Calidad"
-  },
-  {
-    "question": "¿Qué lenguaje de marcado se utiliza para estructurar contenido en la web?",
-    "options": [
-      "CSS",
-      "JavaScript",
-      "HTML",
-      "XML"
-    ],
-    "correct": 2,
-    "prize": 100,
-    "category": "Web"
-  },
-  {
-    "question": "¿Qué servicio en la nube de Amazon proporciona almacenamiento de objetos escalable?",
-    "options": [
-      "EC2",
-      "S3",
-      "Lambda",
-      "RDS"
-    ],
-    "correct": 1,
-    "prize": 100,
-    "category": "Cloud"
-  },
-  {
-    "question": "¿Qué patrón de diseño se utiliza para crear objetos sin especificar la clase exacta?",
-    "options": [
-      "Singleton",
-      "Factory",
-      "Observer",
-      "Decorator"
-    ],
-    "correct": 1,
-    "prize": 100,
-    "category": "Diseño"
-  },
-  {
-    "question": "¿Qué protocolo de enrutamiento dinámico es común en redes grandes de Internet?",
-    "options": [
-      "RIP",
-      "OSPF",
-      "BGP",
-      "EIGRP"
-    ],
-    "correct": 2,
-    "prize": 100,
-    "category": "Redes"
-  },
-  {
-    "question": "¿Qué tecnología permite a los desarrolladores empaquetar aplicaciones con sus dependencias?",
-    "options": [
-      "Virtual Machines",
-      "Contenedores",
-      "Microservicios",
-      "APIs"
-    ],
-    "correct": 1,
-    "prize": 100,
-    "category": "DevOps"
-  },
-  {
-    "question": "¿Qué tipo de base de datos es adecuada para datos altamente interconectados?",
-    "options": [
-      "Relacional",
-      "Documental",
-      "Grafo",
-      "Clave-Valor"
-    ],
-    "correct": 2,
-    "prize": 100,
-    "category": "Bases de Datos"
-  },
-  {
-    "question": "¿Qué herramienta se utiliza para automatizar tareas de construcción y pruebas en CI/CD?",
-    "options": [
-      "Git",
-      "Docker",
-      "Jenkins",
-      "Kubernetes"
-    ],
-    "correct": 2,
-    "prize": 100,
-    "category": "DevOps"
-  },
-  {
-    "question": "¿Qué lenguaje de programación es conocido por su sintaxis clara y legibilidad, a menudo usado en ciencia de datos?",
-    "options": [
-      "Java",
-      "C#",
-      "Python",
-      "Ruby"
-    ],
-    "correct": 2,
-    "prize": 100,
-    "category": "Programación"
+    "category": "Conceptos"
   }
 ]

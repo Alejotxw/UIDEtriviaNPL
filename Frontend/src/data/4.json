@@ -1,254 +1,254 @@
 [
   {
-    "question": "Pregunta de inicialización (Genera el banco desde ajustes)",
+    "question": "¿Qué componente físico de la computadora se encarga de enfriar el procesador?",
     "options": [
-      "Opción A",
-      "Opción B",
-      "Opción C",
-      "Opción D"
+      "La batería",
+      "El ventilador o disipador",
+      "El monitor",
+      "El teclado"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Hardware"
+  },
+  {
+    "question": "¿Cuál es la función principal de un escáner?",
+    "options": [
+      "Reproducir música",
+      "Convertir un documento físico en una imagen digital",
+      "Limpiar archivos innecesarios",
+      "Conectar la PC a internet"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Hardware"
+  },
+  {
+    "question": "¿Qué significa que un archivo esté en formato '.txt'?",
+    "options": [
+      "Que es un video de alta calidad",
+      "Que es un archivo de texto simple",
+      "Que es una canción",
+      "Que es un programa instalador"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Conceptos"
+  },
+  {
+    "question": "¿Qué es un 'pestaña' en un navegador de internet?",
+    "options": [
+      "Un virus que abre ventanas",
+      "Una sección que permite tener varias páginas abiertas en la misma ventana",
+      "Un botón para apagar el monitor",
+      "Una pieza del mouse"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Internet"
+  },
+  {
+    "question": "¿Para qué sirve el botón 'Actualizar' (o la tecla F5) en el navegador?",
+    "options": [
+      "Para borrar el historial",
+      "Para volver a cargar la página actual",
+      "Para cerrar la sesión",
+      "Para apagar el router"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Internet"
+  },
+  {
+    "question": "¿Cuál es la función de la tecla 'Enter'?",
+    "options": [
+      "Borrar el texto escrito",
+      "Confirmar una acción o bajar de línea al escribir",
+      "Poner la pantalla en negro",
+      "Aumentar el brillo"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Periféricos"
+  },
+  {
+    "question": "¿Qué es la 'Barra de Tareas'?",
+    "options": [
+      "Un cable que conecta la pantalla",
+      "La franja inferior donde aparecen los programas abiertos e iconos",
+      "Una lista de virus detectados",
+      "El lugar donde se guardan las pilas"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Uso de Sistema"
+  },
+  {
+    "question": "¿Qué sucede al hacer 'doble clic' rápido sobre el icono de un programa?",
+    "options": [
+      "Se borra el programa",
+      "Se ejecuta o abre el programa",
+      "Se cambia el nombre del icono",
+      "Se reinicia la computadora"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Uso de Sistema"
+  },
+  {
+    "question": "¿Para qué sirve un cable USB?",
+    "options": [
+      "Para conectar periféricos (como el mouse) o cargar dispositivos",
+      "Para mejorar la calidad del sonido ambiental",
+      "Para limpiar el disco duro",
+      "Para cambiar el sistema operativo"
     ],
     "correct": 0,
     "prize": 100,
-    "category": "Sistema"
+    "category": "Hardware"
   },
   {
-    "question": "¿Qué protocolo de red utiliza el puerto 443 por defecto para comunicaciones seguras?",
+    "question": "¿Qué es el 'Almacenamiento en la nube'?",
     "options": [
-      "HTTP",
-      "FTP",
-      "HTTPS",
-      "SSH"
+      "Guardar archivos en un disco físico externo",
+      "Guardar archivos en servidores de internet para acceder desde cualquier lugar",
+      "Una forma de enfriar el procesador con agua",
+      "Un protector de pantalla animado"
     ],
-    "correct": 2,
+    "correct": 1,
     "prize": 100,
-    "category": "Redes"
+    "category": "Conceptos"
   },
   {
-    "question": "¿Cuál de los siguientes lenguajes de programación es principalmente utilizado para desarrollo web del lado del cliente?",
+    "question": "¿Cuál es la principal diferencia entre una PC de escritorio y una Laptop?",
     "options": [
-      "Python",
-      "Java",
-      "JavaScript",
-      "C++"
+      "La PC de escritorio no usa electricidad",
+      "La Laptop es portátil y tiene batería integrada",
+      "La PC de escritorio no tiene monitor",
+      "La Laptop no puede conectarse a internet"
     ],
-    "correct": 2,
+    "correct": 1,
     "prize": 100,
-    "category": "Programación"
+    "category": "Hardware"
   },
   {
-    "question": "¿Qué tipo de ataque cibernético implica el envío masivo de correos electrónicos no deseados?",
+    "question": "¿Qué es un 'adjunto' en un correo electrónico?",
     "options": [
-      "Phishing",
-      "Spam",
-      "DDoS",
-      "Malware"
+      "La firma del remitente",
+      "Un archivo que se envía junto con el mensaje de texto",
+      "Un virus automático",
+      "La dirección de la persona que recibe"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Internet"
+  },
+  {
+    "question": "¿Qué significa 'cerrar sesión'?",
+    "options": [
+      "Apagar la computadora a la fuerza",
+      "Salir de una cuenta personal de forma segura",
+      "Borrar todos los archivos del usuario",
+      "Formatear el disco duro"
     ],
     "correct": 1,
     "prize": 100,
     "category": "Seguridad"
   },
   {
-    "question": "¿Qué base de datos NoSQL es conocida por su uso de documentos en formato JSON?",
+    "question": "¿Qué es un 'asunto' en un correo electrónico?",
     "options": [
-      "MySQL",
-      "MongoDB",
-      "Oracle",
-      "SQL Server"
+      "El nombre de la persona que escribe",
+      "Un breve título que indica de qué trata el mensaje",
+      "La contraseña para abrir el correo",
+      "El lugar donde se guardan los borradores"
     ],
     "correct": 1,
     "prize": 100,
-    "category": "Bases de Datos"
+    "category": "Internet"
   },
   {
-    "question": "¿Qué herramienta de control de versiones fue creada por Linus Torvalds?",
+    "question": "¿Cuál de estos es un programa para ver fotos?",
     "options": [
-      "Git",
-      "SVN",
-      "Mercurial",
-      "CVS"
+      "Calculadora",
+      "Visor de imágenes o Fotos",
+      "Bloc de notas",
+      "Antivirus"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Software"
+  },
+  {
+    "question": "¿Para qué se usa el 'botón de inicio' en Windows?",
+    "options": [
+      "Para escribir correos electrónicos",
+      "Para acceder a programas, archivos y configuración",
+      "Para desconectar el Wi-Fi",
+      "Para borrar la papelera"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Uso de Sistema"
+  },
+  {
+    "question": "¿Qué componente permite a la computadora reproducir audio?",
+    "options": [
+      "La tarjeta de red",
+      "La tarjeta de sonido y parlantes",
+      "El teclado",
+      "El cable de alimentación"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Hardware"
+  },
+  {
+    "question": "¿Qué es el 'Historial' en un navegador?",
+    "options": [
+      "Una lista de los virus antiguos",
+      "El registro de las páginas web que has visitado",
+      "La biografía del creador de internet",
+      "La fecha de fabricación de la computadora"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Internet"
+  },
+  {
+    "question": "¿Qué es un icono?",
+    "options": [
+      "Una pieza de metal dentro de la PC",
+      "Una pequeña imagen que representa un programa o archivo",
+      "Un sonido de notificación",
+      "Un tipo de cable de red"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Uso de Sistema"
+  },
+  {
+    "question": "¿Qué tecla borra el carácter situado a la izquierda del cursor?",
+    "options": [
+      "Retroceso (Backspace)",
+      "Suprimir (Delete)",
+      "Espacio",
+      "Escape"
     ],
     "correct": 0,
     "prize": 100,
-    "category": "Desarrollo"
+    "category": "Periféricos"
   },
   {
-    "question": "¿Qué protocolo se utiliza para asignar direcciones IP de forma automática en una red?",
+    "question": "¿Qué significa 'copiar y pegar'?",
     "options": [
-      "DNS",
-      "DHCP",
-      "FTP",
-      "SMTP"
+      "Mover un archivo de lugar y borrarlo del original",
+      "Duplicar una información en un lugar diferente",
+      "Eliminar un texto para siempre",
+      "Cambiar el idioma de un documento"
     ],
     "correct": 1,
     "prize": 100,
-    "category": "Redes"
-  },
-  {
-    "question": "¿Qué lenguaje de programación es conocido por su uso en ciencia de datos y aprendizaje automático?",
-    "options": [
-      "Ruby",
-      "Python",
-      "PHP",
-      "Swift"
-    ],
-    "correct": 1,
-    "prize": 100,
-    "category": "Programación"
-  },
-  {
-    "question": "¿Qué tipo de software malicioso se propaga replicándose a sí mismo sin necesidad de intervención del usuario?",
-    "options": [
-      "Troyano",
-      "Gusano",
-      "Spyware",
-      "Adware"
-    ],
-    "correct": 1,
-    "prize": 100,
-    "category": "Seguridad"
-  },
-  {
-    "question": "¿Qué sistema operativo de código abierto está basado en el kernel Linux?",
-    "options": [
-      "Windows",
-      "macOS",
-      "Ubuntu",
-      "iOS"
-    ],
-    "correct": 2,
-    "prize": 100,
-    "category": "Sistemas Operativos"
-  },
-  {
-    "question": "¿Qué tecnología permite ejecutar múltiples sistemas operativos en una sola máquina física?",
-    "options": [
-      "Contenedores",
-      "Virtualización",
-      "Cloud Computing",
-      "Clustering"
-    ],
-    "correct": 1,
-    "prize": 100,
-    "category": "Infraestructura"
-  },
-  {
-    "question": "¿Qué lenguaje de marcado se utiliza para estructurar contenido en la web?",
-    "options": [
-      "CSS",
-      "JavaScript",
-      "HTML",
-      "XML"
-    ],
-    "correct": 2,
-    "prize": 100,
-    "category": "Desarrollo Web"
-  },
-  {
-    "question": "¿Qué protocolo se utiliza para enviar correos electrónicos desde un cliente a un servidor?",
-    "options": [
-      "POP3",
-      "IMAP",
-      "SMTP",
-      "HTTP"
-    ],
-    "correct": 2,
-    "prize": 100,
-    "category": "Redes"
-  },
-  {
-    "question": "¿Qué base de datos relacional es de código abierto y muy popular en aplicaciones web?",
-    "options": [
-      "PostgreSQL",
-      "SQLite",
-      "MySQL",
-      "MariaDB"
-    ],
-    "correct": 2,
-    "prize": 100,
-    "category": "Bases de Datos"
-  },
-  {
-    "question": "¿Qué herramienta se utiliza para automatizar el despliegue y gestión de aplicaciones en contenedores?",
-    "options": [
-      "Kubernetes",
-      "Docker",
-      "Jenkins",
-      "Ansible"
-    ],
-    "correct": 1,
-    "prize": 100,
-    "category": "DevOps"
-  },
-  {
-    "question": "¿Qué tipo de ataque busca engañar a los usuarios para que revelen información confidencial?",
-    "options": [
-      "Spam",
-      "Phishing",
-      "DDoS",
-      "Ransomware"
-    ],
-    "correct": 1,
-    "prize": 100,
-    "category": "Seguridad"
-  },
-  {
-    "question": "¿Qué lenguaje de programación fue desarrollado por Microsoft y es parte del framework .NET?",
-    "options": [
-      "Java",
-      "C#",
-      "Python",
-      "Ruby"
-    ],
-    "correct": 1,
-    "prize": 100,
-    "category": "Programación"
-  },
-  {
-    "question": "¿Qué protocolo de red se utiliza para resolver nombres de dominio a direcciones IP?",
-    "options": [
-      "DHCP",
-      "DNS",
-      "FTP",
-      "HTTP"
-    ],
-    "correct": 1,
-    "prize": 100,
-    "category": "Redes"
-  },
-  {
-    "question": "¿Qué tecnología de almacenamiento en la nube es ofrecida por Amazon?",
-    "options": [
-      "Google Drive",
-      "Dropbox",
-      "OneDrive",
-      "Amazon S3"
-    ],
-    "correct": 3,
-    "prize": 100,
-    "category": "Cloud Computing"
-  },
-  {
-    "question": "¿Qué lenguaje de hojas de estilo se utiliza para diseñar la apariencia de páginas web?",
-    "options": [
-      "HTML",
-      "JavaScript",
-      "CSS",
-      "XML"
-    ],
-    "correct": 2,
-    "prize": 100,
-    "category": "Desarrollo Web"
-  },
-  {
-    "question": "¿Qué herramienta de automatización de infraestructura utiliza archivos de configuración en YAML?",
-    "options": [
-      "Chef",
-      "Puppet",
-      "Ansible",
-      "Terraform"
-    ],
-    "correct": 2,
-    "prize": 100,
-    "category": "DevOps"
+    "category": "Uso de Sistema"
   }
 ]

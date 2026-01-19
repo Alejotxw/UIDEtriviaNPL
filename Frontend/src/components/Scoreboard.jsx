@@ -1,41 +1,42 @@
 import React from 'react';
 
-const Scoreboard = ({ scores, setView }) => {
+const Scoreboard = ({ setView }) => {
+  // Obtenemos los puntajes de localStorage
+  const scores = JSON.parse(localStorage.getItem('scores') || '[]');
+
   return (
-    <div className="settings-overlay"> {/* Reutilizamos el fondo oscuro */}
-      <div className="scoreboard-card"> {/* Nuevo estilo de cuadro para la tabla */}
-        <h2 className="settings-title">🏆 MEJORES PUNTUACIONES</h2>
+    <div className="scoreboard-overlay">
+      <div className="scoreboard-card">
+        <h2 className="gold-text">🏆 SALÓN DE LA FAMA 🏆</h2>
         
-        <div className="table-wrapper">
-          <table className="custom-table">
-            <thead>
-              <tr>
-                <th>Pos.</th>
-                <th>Jugador</th>
-                <th>Puntaje</th>
-                <th>Fecha</th>
-              </tr>
-            </thead>
-            <tbody>
-              {scores.length > 0 ? (
-                scores.map((s, index) => (
-                  <tr key={index}>
-                    <td>{index + 1}</td>
-                    <td>{s.name}</td>
-                    <td>${s.score.toLocaleString()}</td>
-                    <td>{s.date}</td>
-                  </tr>
-                ))
-              ) : (
+        <div className="score-table-container">
+          {scores.length > 0 ? (
+            <table className="score-table">
+              <thead>
                 <tr>
-                  <td colSpan="4">No hay puntuaciones registradas aún.</td>
+                  <th>Puesto</th>
+                  <th>Jugador</th>
+                  <th>Puntaje</th>
+                  <th>Fecha</th>
                 </tr>
-              )}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {scores.map((s, index) => (
+                  <tr key={index} className={index === 0 ? 'top-score' : ''}>
+                    <td>{index + 1}º</td>
+                    <td>{s.name}</td>
+                    <td className="gold-text">${s.score.toLocaleString()}</td>
+                    <td style={{ fontSize: '0.8rem' }}>{s.date}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          ) : (
+            <p className="no-scores">Aún no hay récords. ¡Sé el primero!</p>
+          )}
         </div>
 
-        <button onClick={() => setView('menu')} className="btn-save-settings" style={{ marginTop: '20px' }}>
+        <button className="menu-btn" onClick={() => setView('menu')}>
           VOLVER AL MENÚ
         </button>
       </div>

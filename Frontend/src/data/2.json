@@ -1,254 +1,255 @@
+
 [
   {
-    "question": "Pregunta de inicialización (Genera el banco desde ajustes)",
+    "question": "¿Qué significan las siglas USB?",
     "options": [
-      "Opción A",
-      "Opción B",
-      "Opción C",
-      "Opción D"
+      "Unidad de Sistema Binario",
+      "Universal Serial Bus",
+      "Usuario de Servicio Básico",
+      "Unión de Sistemas de Banda"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Hardware"
+  },
+  {
+    "question": "¿Cuál es la función principal de un Router?",
+    "options": [
+      "Imprimir documentos a color",
+      "Aumentar la velocidad del procesador",
+      "Distribuir la señal de internet a varios dispositivos",
+      "Guardar copias de seguridad de fotos"
+    ],
+    "correct": 2,
+    "prize": 100,
+    "category": "Redes"
+  },
+  {
+    "question": "¿Qué es una 'nube' (Cloud) en informática?",
+    "options": [
+      "Un tipo de pantalla muy brillante",
+      "Servicios de almacenamiento y programas a través de Internet",
+      "Un ventilador que enfría la computadora",
+      "Un protector de pantalla con formas de cielo"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Internet"
+  },
+  {
+    "question": "¿Cuál de estos es un ejemplo de Software?",
+    "options": [
+      "El ratón",
+      "El monitor",
+      "El sistema operativo Windows",
+      "El cable de corriente"
+    ],
+    "correct": 2,
+    "prize": 100,
+    "category": "Software"
+  },
+  {
+    "question": "¿Qué acción realiza el comando 'Pegar'?",
+    "options": [
+      "Borrar un archivo para siempre",
+      "Insertar un elemento que ha sido copiado previamente",
+      "Cerrar la ventana actual",
+      "Cambiar el nombre de una carpeta"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Uso de Sistema"
+  },
+  {
+    "question": "¿Qué es un píxel?",
+    "options": [
+      "Una pieza de la batería",
+      "La unidad más pequeña que forma una imagen en pantalla",
+      "Un tipo de cable para internet",
+      "Un sonido de error del sistema"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Conceptos"
+  },
+  {
+    "question": "¿Cuál de las siguientes es una contraseña segura?",
+    "options": [
+      "123456",
+      "password",
+      "MiNombre123",
+      "P4ssw0rd!2024 (combinando letras, números y símbolos)"
+    ],
+    "correct": 3,
+    "prize": 100,
+    "category": "Seguridad"
+  },
+  {
+    "question": "¿Para qué sirve la tecla 'Bloq Mayús'?",
+    "options": [
+      "Para apagar la pantalla",
+      "Para escribir todo el texto en letras mayúsculas",
+      "Para borrar la última palabra escrita",
+      "Para saltar a la siguiente página"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Periféricos"
+  },
+  {
+    "question": "¿Qué extensión suele tener un archivo de audio?",
+    "options": [
+      ".jpg",
+      ".mp3",
+      ".exe",
+      ".txt"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Conceptos"
+  },
+  {
+    "question": "¿Cómo se llama la página principal que aparece al encender la computadora?",
+    "options": [
+      "Menú de Inicio",
+      "Escritorio",
+      "Ventana de Control",
+      "Bandeja de Entrada"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Uso de Sistema"
+  },
+  {
+    "question": "¿Qué es un enlace o 'link'?",
+    "options": [
+      "Un virus que bloquea el teclado",
+      "Un texto o imagen que al hacer clic te lleva a otra página",
+      "Una pieza del disco duro",
+      "El nombre de la marca de la computadora"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Internet"
+  },
+  {
+    "question": "¿Cuál es la función del botón derecho del ratón (mouse)?",
+    "options": [
+      "Apagar el equipo inmediatamente",
+      "Abrir un menú de opciones o funciones adicionales",
+      "Subir el volumen de la música",
+      "Reiniciar el programa actual"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Uso de Sistema"
+  },
+  {
+    "question": "¿Qué es una carpeta en la computadora?",
+    "options": [
+      "Un componente físico para guardar papeles",
+      "Un contenedor virtual para organizar y guardar archivos",
+      "Un programa para navegar por internet",
+      "Un tipo de memoria RAM"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Uso de Sistema"
+  },
+  {
+    "question": "¿Qué significa que un programa es 'Gratis' o 'Freeware'?",
+    "options": [
+      "Que solo funciona si no hay internet",
+      "Que se puede usar sin pagar dinero por su licencia",
+      "Que rompe la computadora al instalarlo",
+      "Que solo lo pueden usar expertos"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Software"
+  },
+  {
+    "question": "¿Cuál es la función principal de una impresora?",
+    "options": [
+      "Escuchar música",
+      "Pasar información digital a papel físico",
+      "Guardar archivos de texto",
+      "Conectar la computadora a la red eléctrica"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Hardware"
+  },
+  {
+    "question": "¿Qué es un navegador web?",
+    "options": [
+      "Un motor de búsqueda",
+      "Una aplicación para visualizar páginas en internet",
+      "Un cable de red",
+      "Un tipo de virus"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Software"
+  },
+  {
+    "question": "¿Qué sucede si presionas Ctrl + Z en la mayoría de los programas?",
+    "options": [
+      "Se cierra el programa",
+      "Se deshace la última acción realizada",
+      "Se imprime el documento",
+      "Se guarda el archivo"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Uso de Sistema"
+  },
+  {
+    "question": "¿Qué es un PDF?",
+    "options": [
+      "Un tipo de virus de correo",
+      "Un formato de documento que mantiene su diseño original",
+      "Un componente de la placa base",
+      "Una red social de fotos"
+    ],
+    "correct": 1,
+    "prize": 100,
+    "category": "Conceptos"
+  },
+  {
+    "question": "¿Cuál es la función de una webcam?",
+    "options": [
+      "Capturar video y transmitirlo por la computadora",
+      "Escuchar sonidos del ambiente",
+      "Proyectar imágenes en una pared",
+      "Medir la temperatura del procesador"
     ],
     "correct": 0,
     "prize": 100,
-    "category": "Sistema"
+    "category": "Hardware"
   },
   {
-    "question": "¿Qué protocolo de red se utiliza para asignar direcciones IP dinámicamente a dispositivos en una red?",
+    "question": "¿Qué es el 'escritorio' de Windows?",
     "options": [
-      "DNS",
-      "DHCP",
-      "FTP",
-      "HTTP"
+      "El mueble donde se apoya la PC",
+      "La pantalla inicial con iconos y barra de tareas",
+      "Un programa para escribir cartas",
+      "La parte trasera de la torre"
     ],
     "correct": 1,
     "prize": 100,
-    "category": "Redes"
+    "category": "Uso de Sistema"
   },
   {
-    "question": "¿Cuál de las siguientes es una base de datos NoSQL?",
+    "question": "¿Qué es la 'arroba' (@) en un correo electrónico?",
     "options": [
-      "MySQL",
-      "PostgreSQL",
-      "MongoDB",
-      "Oracle"
-    ],
-    "correct": 2,
-    "prize": 100,
-    "category": "Bases de Datos"
-  },
-  {
-    "question": "¿Qué lenguaje de programación es conocido por su uso en desarrollo web del lado del cliente?",
-    "options": [
-      "Python",
-      "Java",
-      "JavaScript",
-      "C++"
-    ],
-    "correct": 2,
-    "prize": 100,
-    "category": "Programación"
-  },
-  {
-    "question": "¿Qué herramienta se utiliza para gestionar versiones de código fuente?",
-    "options": [
-      "Docker",
-      "Git",
-      "Jenkins",
-      "Kubernetes"
+      "El nombre del usuario",
+      "El símbolo que separa el nombre del usuario del dominio",
+      "La contraseña del correo",
+      "Un comando para borrar mensajes"
     ],
     "correct": 1,
     "prize": 100,
-    "category": "DevOps"
-  },
-  {
-    "question": "¿Qué tipo de ataque cibernético implica engañar a un usuario para que revele información confidencial?",
-    "options": [
-      "DDoS",
-      "Phishing",
-      "Malware",
-      "Ransomware"
-    ],
-    "correct": 1,
-    "prize": 100,
-    "category": "Seguridad"
-  },
-  {
-    "question": "¿Qué estructura de datos funciona con el principio FIFO (First In, First Out)?",
-    "options": [
-      "Pila",
-      "Cola",
-      "Árbol",
-      "Grafo"
-    ],
-    "correct": 1,
-    "prize": 100,
-    "category": "Algoritmos"
-  },
-  {
-    "question": "¿Qué sistema operativo es de código abierto y basado en el kernel Linux?",
-    "options": [
-      "Windows",
-      "macOS",
-      "Ubuntu",
-      "iOS"
-    ],
-    "correct": 2,
-    "prize": 100,
-    "category": "Sistemas Operativos"
-  },
-  {
-    "question": "¿Qué protocolo seguro se utiliza para acceder y administrar servidores de forma remota?",
-    "options": [
-      "HTTP",
-      "FTP",
-      "SSH",
-      "SMTP"
-    ],
-    "correct": 2,
-    "prize": 100,
-    "category": "Redes"
-  },
-  {
-    "question": "¿Qué lenguaje de consulta se utiliza para interactuar con bases de datos relacionales?",
-    "options": [
-      "HTML",
-      "CSS",
-      "SQL",
-      "XML"
-    ],
-    "correct": 2,
-    "prize": 100,
-    "category": "Bases de Datos"
-  },
-  {
-    "question": "¿Qué framework de JavaScript es popular para construir interfaces de usuario?",
-    "options": [
-      "Django",
-      "Spring",
-      "React",
-      "Laravel"
-    ],
-    "correct": 2,
-    "prize": 100,
-    "category": "Programación"
-  },
-  {
-    "question": "¿Qué tecnología permite ejecutar aplicaciones en contenedores aislados?",
-    "options": [
-      "VirtualBox",
-      "VMware",
-      "Docker",
-      "Hyper-V"
-    ],
-    "correct": 2,
-    "prize": 100,
-    "category": "DevOps"
-  },
-  {
-    "question": "¿Qué tipo de cifrado utiliza un par de claves pública y privada?",
-    "options": [
-      "Simétrico",
-      "Asimétrico",
-      "Hash",
-      "SSL"
-    ],
-    "correct": 1,
-    "prize": 100,
-    "category": "Seguridad"
-  },
-  {
-    "question": "¿Qué algoritmo de ordenación tiene una complejidad promedio de O(n log n)?",
-    "options": [
-      "Burbuja",
-      "Inserción",
-      "Quicksort",
-      "Selección"
-    ],
-    "correct": 2,
-    "prize": 100,
-    "category": "Algoritmos"
-  },
-  {
-    "question": "¿Qué comando en Linux se utiliza para listar archivos y directorios?",
-    "options": [
-      "cd",
-      "ls",
-      "mkdir",
-      "rm"
-    ],
-    "correct": 1,
-    "prize": 100,
-    "category": "Sistemas Operativos"
-  },
-  {
-    "question": "¿Qué dispositivo de red conecta múltiples redes y dirige el tráfico entre ellas?",
-    "options": [
-      "Switch",
-      "Hub",
-      "Router",
-      "Modem"
-    ],
-    "correct": 2,
-    "prize": 100,
-    "category": "Redes"
-  },
-  {
-    "question": "¿Qué tipo de base de datos almacena datos en tablas con filas y columnas?",
-    "options": [
-      "Documental",
-      "Relacional",
-      "Gráfica",
-      "Clave-Valor"
-    ],
-    "correct": 1,
-    "prize": 100,
-    "category": "Bases de Datos"
-  },
-  {
-    "question": "¿Qué lenguaje de programación es interpretado y se usa comúnmente en ciencia de datos?",
-    "options": [
-      "C#",
-      "Ruby",
-      "Python",
-      "Go"
-    ],
-    "correct": 2,
-    "prize": 100,
-    "category": "Programación"
-  },
-  {
-    "question": "¿Qué herramienta de automatización se utiliza para orquestar contenedores?",
-    "options": [
-      "Ansible",
-      "Chef",
-      "Kubernetes",
-      "Puppet"
-    ],
-    "correct": 2,
-    "prize": 100,
-    "category": "DevOps"
-  },
-  {
-    "question": "¿Qué técnica de seguridad verifica la identidad de un usuario?",
-    "options": [
-      "Autorización",
-      "Autenticación",
-      "Cifrado",
-      "Firewall"
-    ],
-    "correct": 1,
-    "prize": 100,
-    "category": "Seguridad"
-  },
-  {
-    "question": "¿Qué estructura de datos es una colección de elementos no ordenados y sin duplicados?",
-    "options": [
-      "Lista",
-      "Conjunto",
-      "Diccionario",
-      "Tupla"
-    ],
-    "correct": 1,
-    "prize": 100,
-    "category": "Algoritmos"
+    "category": "Internet"
   }
 ]

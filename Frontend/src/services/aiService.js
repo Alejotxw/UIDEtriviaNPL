@@ -1,7 +1,19 @@
 const DEEPSEEK_API_KEY = "sk-c76f7a44fd974f04ad7593aa6777f170"; 
 
 export const generateQuizData = async (preguntasExistentes = []) => {
-  const temas = ["Programación", "Bases de Datos", "Redes", "Seguridad", "Hardware"];
+  const temas = [
+    "Informática Básica (Hardware/Software)",
+    "Programación (Lógicas y lenguajes)",
+    "Desarrollo de Software",
+    "Bases de Datos (SQL/NoSQL)",
+    "Redes de Computadoras",
+    "Seguridad Informática",
+    "Sistemas Operativos (Linux/Windows)",
+    "Computación en la Nube",
+    "Ingeniería de Software",
+    "Inteligencia Artificial",
+    "Ciencia de Datos"
+    ];
   
   // Lista negra para el prompt
   const listaNegra = preguntasExistentes.length > 0 
