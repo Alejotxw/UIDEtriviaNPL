@@ -2,17 +2,8 @@ const DEEPSEEK_API_KEY = "sk-c76f7a44fd974f04ad7593aa6777f170";
 
 export const generateQuizData = async (preguntasExistentes = []) => {
   const temas = [
-    "Soporte Técnico (Partes de la PC y Mantenimiento).",
-    "Lógica y Algoritmos (Aprende a pensar como programador).",
-    "Creación de Aplicaciones y Apps.",
-    "Organización de Datos (Excel y Tablas).",
-    "Cómo funciona el Internet y el Wi-Fi.",
-    "Protección de Datos y Redes Sociales (Ciberseguridad).",
-    "Manejo de Windows y Linux.",
-    "Uso de Drive, iCloud y la Nube.",
-    "Cómo se crean los grandes proyectos digitales.",
-    "Chatbots y Generación de Imágenes (IA).",
-    "Análisis de Información y Estadísticas"
+    "Computación Basica.",
+    "Informatica Basica",
     ];
   
   // Lista negra para el prompt

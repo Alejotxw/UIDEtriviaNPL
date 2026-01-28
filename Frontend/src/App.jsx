@@ -1,13 +1,10 @@
 import React, { useState, useEffect } from "react";
 // Importación de los 7 archivos JSON (Base de Datos Local)
-import d1 from "./data/Data_1.json"; 
-import d2 from "./data/Data_2.json"; 
-import d3 from "./data/Data_3.json"; 
-import d4 from "./data/Data_4.json"; 
-import d5 from "./data/Data_5.json"; 
-import d6 from "./data/Data_6.json"; 
-import d7 from "./data/Data_7.json"; 
-import d8 from "./data/Data_8.json"; 
+import d1 from "./data/Data1.json"; 
+import d2 from "./data/Data2.json"; 
+import d3 from "./data/Data3.json"; 
+import d4 from "./data/Data4.json"; 
+import d5 from "./data/Data5.json"; 
 
 // Importación de Componentes
 import MainMenu from "./components/MainMenu.jsx";
@@ -35,7 +32,7 @@ function App() {
    * Prepara el banco de preguntas para una nueva partida
    */
   const prepareGame = () => {
-    const allData = [...d1, ...d2, ...d3, ...d4, ...d5, ...d6, ...d7, ...d8];
+    const allData = [...d1, ...d2, ...d3, ...d4, ...d5];
     
     const filtered = allData.filter(q => 
       q.question && !q.question.toLowerCase().includes("inicialización")
