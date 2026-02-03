@@ -15,6 +15,8 @@ import Settings from "./components/Settings.jsx";
 
 // Importación del servicio de IA
 import { generateQuizData } from "./services/aiService";
+// Importación del servicio de almacenamiento
+import { saveQuestionsToServer, checkBackendHealth } from "./services/storageService";
 
 function App() {
   // Estados de navegación y configuración
@@ -59,7 +61,7 @@ function App() {
   };
 
   /**
-   * Lógica para generar preguntas con IA y descargar el archivo JSON
+   * Lógica para generar preguntas con IA y guardar el archivo JSON
    */
   const handleGenerateBank = async () => {
     setIsGenerating(true);
@@ -70,28 +72,20 @@ function App() {
       const data = await generateQuizData(existingTexts);
       
       if (data && data.questions && data.questions.length > 0) {
-        // Formateamos el JSON para que sea legible
-        const jsonString = JSON.stringify(data.questions, null, 2);
+        // Guardar las preguntas (en servidor o descargar localmente)
+        const saveResult = await saveQuestionsToServer(data.questions);
         
-        // Crear un link invisible para forzar la descarga
-        const blob = new Blob([jsonString], { type: "application/json" });
-        const url = URL.createObjectURL(blob);
-        const link = document.createElement("a");
-        
-        link.href = url;
-        link.download = `preguntas_ia_${Date.now()}.json`;
-        document.body.appendChild(link);
-        link.click();
-        
-        // Limpieza de memoria y elementos
-        document.body.removeChild(link);
-        URL.revokeObjectURL(url);
-        
-        alert("¡Archivo JSON generado y descargado con éxito!");
+        if (saveResult.mode === 'local') {
+          alert(`✅ ¡Éxito! Se descargó el archivo con ${data.questions.length} preguntas:\n📥 ${saveResult.filename}`);
+        } else {
+          alert(`✅ ¡Éxito! Se guardaron ${data.questions.length} preguntas en:\n📁 /Frontend/src/data/${saveResult.filename}`);
+        }
+      } else {
+        throw new Error("No se generaron preguntas válidas");
       }
     } catch (error) {
       console.error("Error al generar banco:", error);
-      alert("Error: " + error.message);
+      alert("❌ Error: " + error.message);
     } finally {
       setIsGenerating(false);
     }
