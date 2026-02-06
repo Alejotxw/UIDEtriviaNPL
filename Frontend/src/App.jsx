@@ -99,7 +99,7 @@ function App() {
           }
         } catch (postErr) {
           console.error('Fallo al conectar con backend:', postErr);
-          alert('❌ No se pudo conectar con el backend para guardar las preguntas.\nAsegúrate de que está corriendo en http://localhost:5001');
+          alert('❌ No se pudo conectar con el backend para guardar las preguntas.\nAsegúrate de que está corriendo en https://uide-trivia-backend.vercel.app/');
         }
       }
     } catch (error) {
