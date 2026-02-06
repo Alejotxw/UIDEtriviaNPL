@@ -30,46 +30,16 @@ if (!fs.existsSync(dataDir)) {
  * Endpoint para guardar JSON de preguntas generadas por IA
  * POST /api/save-questions
  */
-app.post('/api/save-questions', (req, res) => {
+app.post('/api/save-questions', async (req, res) => {
   try {
-    const { questions, filename } = req.body;
+    // 1. Aquí va tu lógica actual para generar preguntas con IA
+    const nuevasPreguntas = await generarPreguntasConIA(); 
 
-    if (!questions || !Array.isArray(questions)) {
-      return res.status(400).json({
-        success: false,
-        message: 'El campo "questions" es obligatorio y debe ser un array'
-      });
-    }
-
-    // Generar nombre de archivo si no se proporciona
-    const fileName = filename || `preguntas_ia_${Date.now()}.json`;
-    const filePath = path.join(dataDir, fileName);
-
-    // Validar que el nombre de archivo sea seguro (prevenir directory traversal)
-    const resolvedPath = path.resolve(filePath);
-    if (!resolvedPath.startsWith(path.resolve(dataDir))) {
-      return res.status(400).json({
-        success: false,
-        message: 'Nombre de archivo inválido'
-      });
-    }
-
-    // Guardar el archivo
-    const jsonContent = JSON.stringify(questions, null, 2);
-    fs.writeFileSync(filePath, jsonContent, 'utf-8');
-
-    res.json({
-      success: true,
-      message: 'Archivo guardado correctamente',
-      filename: fileName,
-      path: filePath
-    });
+    // 2. EN LUGAR DE USAR fs.writeFile, simplemente envíalas de vuelta
+    res.status(200).json(nuevasPreguntas);
+    
   } catch (error) {
-    console.error('Error al guardar el archivo:', error);
-    res.status(500).json({
-      success: false,
-      message: 'Error al guardar el archivo: ' + error.message
-    });
+    res.status(500).json({ error: "No se pudieron generar las preguntas" });
   }
 });
 
