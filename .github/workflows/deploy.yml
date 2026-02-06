@@ -1,0 +1,42 @@
+name: Deploy Frontend and Backend
+
+on:
+  push:
+    branches: [ main ] # Se activa cuando subes cambios a la rama main
+
+jobs:
+  # Trabajo para el Frontend
+  build-frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install & Build Frontend
+        run: |
+          cd Frontend
+          npm install
+          npm run build
+        # Aquí añadirías el paso de subida (ej. a S3 o Netlify)
+
+  # Trabajo para el Backend
+  build-backend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js (o el lenguaje que uses)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install & Test Backend
+        run: |
+          cd Backend
+          npm install
+          # npm test 
+        # Aquí añadirías el paso de subida (ej. a un VPS o Heroku)
