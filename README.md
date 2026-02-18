@@ -1,16 +1,15 @@
-# 🚀 WOND - Trivia Game - AI Powered
+# 🚀 WOND - Juego de Trivia con NPL
+Este proyecto es una plataforma que simula el Juego Quiero ser Millonario con NPL e interactiva que utiliza una API de Inteligencia Artificial para generar contenido dinámico sobre TIC's.
+*Almacenando las preguntas en una base de datos (Firebase).*
 
-Este proyecto es una plataforma de juego de trivia interactiva que utiliza Inteligencia Artificial para generar contenido dinámico sobre TI e Informática.
-
-## 👥 Equipo de Desarrollo (Full Stack)
+## 👥 Equipo de Desarrollo
 * **Sebastián Chocho** - Full Stack Developer
 * **Aidan Carpio** - Full Stack Developer
 * **Evelyn Valverde** - Full Stack Developer
 
 ## 📋 Características Principales
-* **Generación con IA**: Crea bancos de 20 preguntas únicas sobre computación e informática.
-* **Validación de Duplicados**: Evita repetir las últimas 10 preguntas generadas.
-* **Sistema de Guardado Híbrido**: Intenta guardar en el servidor (`/data`) y ofrece descarga local como respaldo.
+* **Generación con IA**: Crea bancos de 20 preguntas únicas sobre TIC's.
+* **Validación de Duplicados**: Evita repetir las misma preguntas 20 preguntas generadas.
 * **Game Design**: Temporizador dinámico, comodín de llamada (+15s) y escala de premios hasta $1,000,000.
 * **Analytics**: Exportación de resultados de jugadores en formato CSV.
 
