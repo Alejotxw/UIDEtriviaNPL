@@ -75,4 +75,5 @@ Este proyecto es una plataforma que simula el Juego Quiero ser Millonario con NP
 
 
 ## 📝 Licencia
-Proyecto desarrollado para fines académicos y de entrenamiento en tecnologías.
+
+Copyright (c) 2026 Sebastián Chocho, Aidan Carpio, Evelyn Valverde
